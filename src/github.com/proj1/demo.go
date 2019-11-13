@@ -2,7 +2,6 @@ package main
 
 import "fmt"
 import "bater"
-
 // import "time"
 
 // import "pk1"
