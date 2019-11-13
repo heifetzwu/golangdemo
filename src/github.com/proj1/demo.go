@@ -30,6 +30,7 @@ func main() {
 	// resursionpattern(3)
 	// sortdemo()
 	// structdemo()
+
 	// advslice()
 	// readfiledemo()
 	// channel()
@@ -40,6 +41,7 @@ func main() {
 	// mapdemo()
 	// methoddemo()
 	// interfacedemo()
+	// interfacedemo2()
 	// goroutine2()
 	// channeldemo()
 	// channeltest()
@@ -48,6 +50,8 @@ func main() {
 	// httpPost()
 	// httpClient()
 	// httpPostForm()
+	// httppost()
+	// httppost2()
 
 	// httphtml()
 	// httpfileserver()
@@ -70,8 +74,13 @@ func main() {
 	// muxdemo()
 	// httpsitemap()
 	// mysqldemo()
-
+	// goroutinelockdemo()
+	// defertest()
+	// defertest2()
+	// defertest3main()
+	// errordemo3()
+	bater.channeldemo()
 	// httpcount()
-	i := 10
-	fmt.Printf("Is %d even? %v\n", i, bater.Even(i))
+	// i := 11
+	// fmt.Printf("Is %d even? %v\n", i, bater.Even(i))
 }
