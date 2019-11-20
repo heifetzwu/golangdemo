@@ -10,8 +10,18 @@ func channeltest() {
 
 	// 	go B()
 
+	testint := 1
+	switch testint {
+	case 1:
+		fmt.Println("case 1")
+	case 2:
+		fmt.Println("case 2")
+	case 0:
+		fmt.Println("case 0")
+	}
 	go func() {
 		for {
+
 			select {
 			case i := <-g:
 				// fmt.Println("go func", <-g)

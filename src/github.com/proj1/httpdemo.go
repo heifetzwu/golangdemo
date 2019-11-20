@@ -4,12 +4,13 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"github.com/gorilla/mux"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"net/url"
 	"strings"
+
+	"github.com/gorilla/mux"
 )
 
 func httpGet() {
@@ -60,12 +61,11 @@ func httpClient() {
 
 	resp, err := client.Do(req)
 
-	defer resp.Body.Close()
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		// handle error
 	}
-
+	defer resp.Body.Close()
 	fmt.Println(string(body))
 }
 
@@ -188,12 +188,18 @@ var countvar int
 func httpcount() {
 	http.HandleFunc("/", handler) // each request calls handler
 	http.HandleFunc("/count/", counter)
+	// http.ListenAndServe("localhost:8123", nil)
 	log.Fatal(http.ListenAndServe("localhost:8123", nil))
 }
 
 // handler echoes the Path component of the request URL r.
 func handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "URL.Path = %q\n", r.URL.Path)
+	keys := r.URL.Query()
+
+	fmt.Fprintf(w, "URL.Path = %q\n", keys)
+	fmt.Fprintf(w, "URL.Path = %q\n", keys["abc"])
+
 }
 
 func counter(w http.ResponseWriter, r *http.Request) {

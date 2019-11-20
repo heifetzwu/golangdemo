@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
-import "bater"
+import (
+	"fmt"
+)
+
 // import "time"
 
 // import "pk1"
@@ -21,6 +23,7 @@ func main() {
 	// arr2()
 	// matrix()
 	// imatrix(4)
+	// slice1()
 	// slice2()
 	// slice3()
 	// pointer1()
@@ -32,6 +35,7 @@ func main() {
 
 	// advslice()
 	// readfiledemo()
+	// read2()
 	// channel()
 	// go goroutine(0)
 	// time.Sleep(time.Second * 1)
@@ -51,18 +55,22 @@ func main() {
 	// httpPostForm()
 	// httppost()
 	// httppost2()
-
+	// bater.Httpcookie()
+	// bater.Gindemo()
 	// httphtml()
 	// httpfileserver()
+	httpmain()
 
+	// httpallsp()
+
+	// httpcount()
 	// apidemo()
 	// apidemoint()
 	// httpquerydemo()
 	// martinidemo()
 	// martinidemo2()
 	// selectdemo()
-	// errordemo()
-	// errordemo2()
+
 	// stringsdemo()
 	// timedemo()
 	// logdemo()
@@ -77,9 +85,11 @@ func main() {
 	// defertest()
 	// defertest2()
 	// defertest3main()
+	// errordemo()
+	// errordemo2()
 	// errordemo3()
-	bater.channeldemo()
-	// httpcount()
+	// bater.Channeldemo()
+
 	// i := 11
 	// fmt.Printf("Is %d even? %v\n", i, bater.Even(i))
 }

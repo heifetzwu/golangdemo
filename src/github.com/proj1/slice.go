@@ -11,6 +11,11 @@ func slice1() {
 
 func slice2() {
 	x := make([]int, 5, 10)
+	// fmt.Println("before any modifitions")
+	// fmt.Println("x ->", x)
+	// fmt.Println("after append")
+	// x = append(x, 1, 2, 3, 4, 5, 6)
+	// fmt.Println("x ->", x)
 	x[1] = 2
 	y := x[1:3]
 
